@@ -4,7 +4,7 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.engine import URL
 
 # Configure Oracle client
-oracle_client_path = r"C:\Users\aalik\Documents\instantclient_23_4"
+oracle_client_path = r""
 if not os.path.exists(oracle_client_path):
     raise Exception(f"Oracle client path does not exist: {oracle_client_path}")
 os.environ["PATH"] = oracle_client_path + ";" + os.environ["PATH"]
@@ -29,10 +29,10 @@ def fetch_data_from_oracle(user, password, host, port, service_name, query):
     return df
 
 # Oracle connection parameters
-user = 'Alikhan'  
-password = 'I7juGGsz'  
-host = '10.10.120.96'  
-port = 1521
+user = ''  
+password = ''  
+host = ''  
+port = 
 service_name = 'ORCL'
 
 # Определение SQL-запроса
